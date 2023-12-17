@@ -78,7 +78,7 @@ void Photoshop::on_vMirror_clicked()
         img_aux = img2;
         for (unsigned int i = 0; i < h; i++){
             for (unsigned int j = 0; j < w; j++){
-                img2.setPixel(j,i,img_aux.pixel(w - j-1, i));
+                img2.setPixel(j,i,img_aux.pixel(j, h -i-1));
             }
         }
         QPixmap pix = QPixmap::fromImage(img2);
@@ -93,7 +93,7 @@ void Photoshop::on_hMirror_clicked()
         img_aux = img2;
         for (unsigned int i = 0; i < h; i++){
             for (unsigned int j = 0; j < w; j++){
-                img2.setPixel(j,i,img_aux.pixel(j, h -i-1));
+                img2.setPixel(j,i,img_aux.pixel(w - j-1, i));
             }
         }
         QPixmap pix = QPixmap::fromImage(img2);
