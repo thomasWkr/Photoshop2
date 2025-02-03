@@ -16,6 +16,16 @@ Photoshop::~Photoshop()
 //Function to shorten image opening
 void Photoshop::openLabel(QPixmap pix){
     secondWnd.show();
+    if (pix.width() >= 600)
+        secondWnd.setMaximumWidth(600);
+    else
+        secondWnd.setMaximumWidth(pix.width());
+
+    if (pix.height() >= 600)
+        secondWnd.setMaximumHeight(600);
+    else
+        secondWnd.setMaximumHeight(pix.height());
+
     secondWnd.setPixmap(pix);
     secondWnd.adjustSize();
 }

@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
@@ -18,6 +19,7 @@ int main(int argc, char *argv[])
     }
     Photoshop w;
     w.setWindowTitle("Photoshôp 2.0");
+    w.setWindowIcon(QIcon("src\icon.png"));
     w.show();
     return a.exec();
 }
