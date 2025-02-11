@@ -1,6 +1,6 @@
 # Photoshop2
 
-This is the second version of a prototype of an image editor, wich was nicknamed "Photoshôp 2.0", developed in C++ as a college assignment. Every tool in the editor was programmed using the corresponding math and physics formulas for it.
+This is the second version of a prototype of an image editor, wich was nicknamed "Photoshôp 2.0", developed in C++ as a college assignment. Every tool in the editor was programmed from sratch using the corresponding math/physics formulas for it.
 
 ## DESIGN
 
